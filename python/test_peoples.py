@@ -10,7 +10,7 @@ class TestPeoples(object):
         response = Peoples().get_all_peoples()
         assert response.status_code == 200
 
-    def test_should_get_personreturn_proper_content_type(self):
+    def test_should_get_person_return_proper_content_type(self):
         content_type = Peoples().get_all_peoples_headers_conent_type()
         assert "application/json" == content_type
 
