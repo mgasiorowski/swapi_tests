@@ -1,0 +1,21 @@
+{
+  "name": "swapi_tests",
+  "version": "0.0.1",
+  "description": "Simple postman tests for https://swapi.co/",
+  "scripts": {
+    "test": "newman run swapi-postman-collection.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgasiorowski/swapi_tests.git"
+  },
+  "author": "Maciej Gąsiorowski <maciej.m.gasiorowski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mgasiorowski/swapi_tests/issues"
+  },
+  "homepage": "https://github.com/mgasiorowski/swapi_tests/postman/#readme",
+  "dependencies": {
+    "newman": "3.8.1"
+  }
+}
