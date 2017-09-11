@@ -1,0 +1,68 @@
+{
+    "variables": [],
+    "info": {
+        "name": "swapi-peoples",
+        "_postman_id": "e0d97005-1be2-d86c-0635-6b686f135143",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Peoples",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": [
+                            "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                            "",
+                            "",
+                            "",
+                            "tests[\"Content-Type is application/json\"] = postman.getResponseHeader(\"Content-Type\") === \"application/json\";"
+                        ]
+                    }
+                }
+            ],
+            "request": {
+                "url": "https://swapi.co/api/people/",
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password123\"\n}"
+                },
+                "description": ""
+            },
+            "response": []
+        },
+        {
+            "name": "Peoples - Luke Skywalker",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": [
+                            "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                            "",
+                            "var jsonData = JSON.parse(responseBody);",
+                            "tests[\"Person name is Luke Skywalker\"] = jsonData.name === \"Luke Skywalker\";"
+                        ]
+                    }
+                }
+            ],
+            "request": {
+                "url": "https://swapi.co/api/people/1/",
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password123\"\n}"
+                },
+                "description": ""
+            },
+            "response": []
+        }
+    ]
+}

@@ -3,5 +3,8 @@
 ## Install dependencies
 `npm install`
 
-## Run tests
-`npm test`
+## Run all tests
+`npm run test-all`
+
+## Run peoples tests
+`npm run test-peoples`
