@@ -1,15 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import configparser
 import requests
 
+from .base import Base
 
-class Peoples(object):
-    def __init__(self):
-        self.config = configparser.ConfigParser()
-        self.config.read("config/default.ini")
-        self.base_url = self.config["DEFAULT"]["base_url"]
+
+class Peoples(Base):
 
     def get_all_peoples(self):
         return requests.get("{base_url}/people/".format(base_url=self.base_url))
