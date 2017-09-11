@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Simple postman tests for https://swapi.co/",
   "scripts": {
-    "test-all": "newman run swapi-postman-collection.json",
-    "test-peoples": "newman run swapi-peoples-postman-collection.json"
+    "test-all": "newman run tests/swapi-postman-collection.json",
+    "test-peoples": "newman run tests/swapi-peoples-postman-collection.json"
   },
   "repository": {
     "type": "git",
