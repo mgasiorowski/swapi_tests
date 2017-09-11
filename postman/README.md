@@ -1,5 +1,8 @@
 # Postman
 
+## Requirements
+* Node.js
+
 ## Install dependencies
 `npm install`
 
