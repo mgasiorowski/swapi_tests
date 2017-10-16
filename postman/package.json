@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Simple postman tests for https://swapi.co/",
   "scripts": {
-    "test-all": "newman run tests/swapi-postman-collection.json",
-    "test-people": "newman run tests/swapi-people-postman-collection.json"
+    "test-all": "newman run tests/swapi-postman-collection.json --color",
+    "test-people": "newman run tests/swapi-people-postman-collection.json --color",
+    "test-all-with-docker": "docker build -t swapi-tests-newman . && docker run --rm swapi-tests-newman"
   },
   "repository": {
     "type": "git",

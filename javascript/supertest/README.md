@@ -7,12 +7,9 @@
 `npm install`
 
 ## Run all tests
-`npm run test-all`
+`npm run test`
 
-## Run  tests
-`npm run test-people`
-
-#Docker
+## Docker
 If you want to run tests in docker.
 
-`npm run test-all-with-docker"`
+`npm run test-with-docker`

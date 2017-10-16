@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "mocha 'test/*.spec.js'"
+    "test": "mocha --colors 'test/*.spec.js'",
+    "test-with-docker": "docker build -t swapi-tests-supertest . && docker run --rm swapi-tests-supertest"
   },
   "devDependencies": {
     "mocha": "^4.0.1",

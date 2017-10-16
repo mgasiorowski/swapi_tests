@@ -1,4 +1,6 @@
-request = require('supertest')
+"use strict";
+
+let request = require('supertest')
 
 let Base = require('./base');
 

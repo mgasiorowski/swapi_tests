@@ -1,3 +1,5 @@
+"use strict";
+
 let People = require('../api/people')
 People = new People()
 
