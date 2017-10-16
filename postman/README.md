@@ -10,4 +10,4 @@
 `npm run test-all`
 
 ## Run  tests
-`npm run test-`
+`npm run test-people`
