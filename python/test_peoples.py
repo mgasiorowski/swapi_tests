@@ -1,23 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from api.peoples import Peoples
+from api.people import People
 
 
-class TestPeoples(object):
+class TestPeople(object):
 
-    def test_should_get_all_peoples_return_200(self):
-        response = Peoples().get_all_peoples()
+    def test_should_get_all__return_200(self):
+        response = People().get_all_()
         assert response.status_code == 200
 
     def test_should_get_person_return_proper_content_type(self):
-        content_type = Peoples().get_all_peoples_headers_conent_type()
+        content_type = People().get_all__headers_conent_type()
         assert "application/json" == content_type
 
-    def test_should_get_person_with_id_from_peoples_return_200(self):
-        response = Peoples().get_specific_people(1)
+    def test_should_get_person_with_id_from__return_200(self):
+        response = People().get_specific_people(1)
         assert response.status_code == 200
 
-    def test_should_get_person_with_id_from_peoples_return_proper_people(self):
-        people_name = Peoples().get_specific_people_name(1)
+    def test_should_get_person_with_id_from__return_proper_people(self):
+        people_name = People().get_specific_people_name(1)
         assert "Luke Skywalker" == people_name

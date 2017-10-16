@@ -33,7 +33,7 @@
 			"response": []
 		},
 		{
-			"name": "Peoples",
+			"name": "People",
 			"event": [
 				{
 					"listen": "test",
@@ -62,7 +62,7 @@
 			"response": []
 		},
 		{
-			"name": "Peoples - Luke Skywalker",
+			"name": "People - Luke Skywalker",
 			"event": [
 				{
 					"listen": "test",

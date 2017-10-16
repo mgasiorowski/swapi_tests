@@ -6,12 +6,12 @@ import requests
 from .base import Base
 
 
-class Peoples(Base):
+class People(Base):
 
-    def get_all_peoples(self):
+    def get_all_(self):
         return requests.get("{base_url}/people/".format(base_url=self.base_url))
 
-    def get_all_peoples_headers_conent_type(self):
+    def get_all__headers_conent_type(self):
         return requests.get("{base_url}/people/".format(base_url=self.base_url)).headers["Content-Type"]
 
     def get_specific_people(self, identifier):

@@ -4,7 +4,7 @@
   "description": "Simple postman tests for https://swapi.co/",
   "scripts": {
     "test-all": "newman run tests/swapi-postman-collection.json",
-    "test-peoples": "newman run tests/swapi-peoples-postman-collection.json"
+    "test-people": "newman run tests/swapi-people-postman-collection.json"
   },
   "repository": {
     "type": "git",

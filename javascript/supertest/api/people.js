@@ -2,16 +2,16 @@ request = require('supertest')
 
 let Base = require('./base');
 
-class Peoples extends Base {
+class People extends Base {
     constructor() {
         super();
     }
 
-    getAllPeoples() {
+    getAllPeople() {
         return request(this.baseUrl).get("/people/");
     }
 
-    getAllPeoplesHeadersContentType() {
+    getAllPeopleHeadersContentType() {
         return request(this.baseUrl).get("/people/")
     }
 
@@ -20,4 +20,4 @@ class Peoples extends Base {
     }
 }
 
-module.exports = Peoples;
+module.exports = People;
