@@ -12,7 +12,7 @@
 ## Run  tests
 `npm run test-people`
 
-#Docker
+## Docker
 If you want to run tests in docker.
 
 `npm run test-all-with-docker"`
