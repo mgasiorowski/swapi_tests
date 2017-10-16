@@ -1,0 +1,12 @@
+{
+  "name": "swapi-integration-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "mocha 'test/*.spec.js'"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0"
+  }
+}
